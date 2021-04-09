@@ -1,0 +1,32 @@
+.signin-form-container {
+    width: 50%;
+    height: 50vh;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.signin-form-container input {
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 0px;
+    border-bottom: 1px solid grey;
+    box-shadow: 5px 5px 10px grey;
+}
+.signin-form-container button {
+    margin-top: 40px;
+    padding: 20px 10px;
+    width: 30%;
+    background: transparent;
+    border: 1px solid grey;
+    font-size: 20px;
+    font-family: monospace;
+    border-radius: 10px;
+}
+.signin-form-container button:hover {
+    background: darkblue;
+    color: yellow;
+}
