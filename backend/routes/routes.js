@@ -5,7 +5,6 @@ const verify = require("../controllers/JwtVerify");
 route.post("/signin", async (req, res) => {
     const data = req.body;
     const result = await UserController.SignIn(data);
-
     res.header("auth-token", result).send(result);
 });
 
