@@ -15,8 +15,8 @@
 - Attackers can decrypt the hashed password using decryptive algos but providing salt is a hard work for them. As salt is always unique(in this app) as it is generating each time randomly 
 - After all this when the user data is valid and the data is stored in db with hashed password, we have private routes that needs authorised users to access them.
 - For that we log in, but I used a middleware function `verify` for my private route that is access only when the user is authorised to access that.
-- But we cannot keep logging each time, for that I use another famous library JWT(jsonwebtokens)
-- That assign each user with a secret access token key when the user logs in.
+- But we cannot keep logging each time, for that I use another famous library JWT(jsonwebtokens), Once the user is logged in, each subsequent request will includ the JWT, allowing the user to access routes, services, and resources that are permitted with that token.
+- JWT sign each user with a secret access token key when the user logs in.
 - And this secret token key is passed as the header with the request, and once the token keys in header are matched the user is able to access the private routes and doesn't need to log in again and again(until the token expires or the user logged out).
 
 ### App completed :-)
